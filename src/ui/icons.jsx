@@ -1,36 +1,37 @@
-export function SoundButton({ on, onToggle }) {
-  return (
-    <button
-      className="snd"
-      type="button"
-      aria-pressed={on}
-      onClick={e => {
-        e.stopPropagation()
-        onToggle()
-      }}
-    >
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M4 9h4l5-4v14l-5-4H4z" />
-        <path className="w" d="M16.5 8.5a5 5 0 0 1 0 7" />
-        <path className="w" d="M19 6a8.5 8.5 0 0 1 0 12" />
-        <path className="x" d="M16 9.5l5 5M21 9.5l-5 5" />
-      </svg>
-      <span>{on ? 'Sound on' : 'Sound off'}</span>
-    </button>
-  )
-}
-
-const Svg = ({ children, className = 'i', ...rest }) => (
-  <svg className={className} viewBox="0 0 24 24" aria-hidden="true" {...rest}>
+const Svg = ({ children, size = 20, ...rest }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...rest}>
     {children}
   </svg>
 )
 
-export const UserIcon = p => <Svg {...p}><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" /></Svg>
-export const LockIcon = p => <Svg {...p}><rect x="4.5" y="10.5" width="15" height="10" rx="1.5" /><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" /></Svg>
-export const EyeIcon = p => <Svg {...p}><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" /><circle cx="12" cy="12" r="3" /><path className="slash-l" d="M4 4l16 16" /></Svg>
-export const HeartIcon = p => <Svg {...p}><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" /></Svg>
-export const BloodIcon = p => <Svg {...p}><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z" fill="currentColor" /></Svg>
-export const WaterIcon = p => <Svg {...p}><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z" /><path d="M9 15a3 3 0 0 0 3 3" /></Svg>
-export const FoodIcon = p => <Svg {...p}><rect x="6" y="4" width="12" height="16" rx="2" /><path d="M6 8.5h12M6 15.5h12" /></Svg>
-export const TempIcon = p => <Svg {...p}><path d="M10 14V5a2 2 0 0 1 4 0v9a4 4 0 1 1-4 0z" /><path d="M12 10v6" /></Svg>
+export const MailIcon = p => <Svg {...p}><rect x="3" y="5" width="18" height="14" rx="3" /><path d="m4 7 8 6 8-6" /></Svg>
+export const LockIcon = p => <Svg {...p}><rect x="4.5" y="10.5" width="15" height="10" rx="2.5" /><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" /></Svg>
+export const EyeIcon = ({ off, ...p }) => (
+  <Svg {...p}>
+    <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" />
+    <circle cx="12" cy="12" r="3" />
+    {off && <path d="M4 4l16 16" />}
+  </Svg>
+)
+export const BoxIcon = p => <Svg {...p}><path d="M21 8 12 3 3 8v8l9 5 9-5z" /><path d="m3 8 9 5 9-5M12 13v8" /></Svg>
+export const ForkliftIcon = p => (
+  <Svg {...p}>
+    <path d="M3 17V9h6l3 5v3" /><path d="M9 9V5H5v4" /><path d="M16 4v13h5" /><circle cx="6" cy="18" r="2" /><circle cx="12" cy="18" r="2" />
+  </Svg>
+)
+export const TruckIcon = p => (
+  <Svg {...p}>
+    <path d="M2 6h11v10H2zM13 10h4l4 4v2h-8" /><circle cx="6" cy="18" r="2" /><circle cx="17" cy="18" r="2" />
+  </Svg>
+)
+export const ArrowIcon = p => <Svg {...p}><path d="M5 12h14M13 6l6 6-6 6" /></Svg>
+
+export function Logo({ size = 34 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 34 34" aria-hidden="true">
+      <rect width="34" height="34" rx="10" fill="#2563eb" />
+      <path d="M17 7.5 9 11.8v9.4l8 4.3 8-4.3v-9.4z" fill="none" stroke="#fff" strokeWidth="2" strokeLinejoin="round" />
+      <path d="m9 11.8 8 4.3 8-4.3M17 16.1v9.4" fill="none" stroke="#fff" strokeWidth="2" strokeLinejoin="round" />
+    </svg>
+  )
+}

@@ -1,174 +1,179 @@
-import { useCallback, useRef, useState } from 'react'
-import { AnimatePresence, animate, motion } from 'motion/react'
-import World from './scene/World.jsx'
-import Intro from './ui/Intro.jsx'
-import LoginPanel from './ui/LoginPanel.jsx'
-import Loading from './ui/Loading.jsx'
-import Welcome from './ui/Welcome.jsx'
-import Hud from './ui/Hud.jsx'
-import Toast from './ui/Toast.jsx'
-import { Sound } from './lib/sound.js'
-import { pick, reduceMotion, wait } from './lib/util.js'
-import { fogTexture, grainTexture } from './lib/textures.js'
+import { useCallback, useEffect, useState } from 'react'
+import { AnimatePresence, motion } from 'motion/react'
+import Warehouse from './scene/Warehouse.jsx'
+import SignInForm from './ui/SignInForm.jsx'
+import Success from './ui/Success.jsx'
+import { Logo } from './ui/icons.jsx'
+import { BRAND, EMAIL_RE, inkOn, parcelFor, trackingNumber } from './lib/parcel.js'
+import { store } from './lib/util.js'
 
-const SPAWNS = {
-  Chernarus: ['Kamyshovo', 'Solnichniy', 'Prigorodki', 'Kamenka', 'Berezino', 'Balota'],
-  Livonia: ['Topolin', 'Brena', 'Nadbór'],
+const ORDER = ['idle', 'drop', 'belt', 'painted', 'ready', 'approach', 'lift', 'holding', 'reverse', 'toTruck', 'load', 'backoff', 'door', 'drive', 'done']
+const at = step => ORDER.indexOf(step)
+
+function statusFor(step, parcel) {
+  switch (step) {
+    case 'drop': return 'A fresh parcel just dropped onto the belt.'
+    case 'belt': return 'Rolling into the paint booth…'
+    case 'painted': return `Painted ${parcel?.name.toLowerCase() ?? ''}! Rolling to the pickup point.`
+    case 'ready': return 'Packed and ready. Type your password to call the forklift.'
+    case 'approach': return 'The forklift is on its way…'
+    case 'lift': return 'Lifting your parcel…'
+    case 'holding': return 'Parcel picked up. Press Sign in to ship it!'
+    case 'reverse': case 'toTruck': return 'Driving your parcel to the truck…'
+    case 'load': return 'Loading it into the truck…'
+    case 'backoff': case 'door': return 'Closing the truck doors…'
+    case 'drive': case 'done': return 'Your parcel is on its way!'
+    case 'arrive': case 'reopen': return 'A new truck is backing in…'
+    default: return 'Type your email and a parcel drops onto the belt.'
+  }
 }
-const spawnFor = server =>
-  SPAWNS[server] ? `${server === 'Livonia' ? 'Riverbank' : 'Coast'} near ${pick(SPAWNS[server])}` : 'The frozen coast'
 
-// Flow: intro → waking → login → running → loading → waking2 → welcome → leaving → login …
 export default function App() {
-  const [phase, setPhaseState] = useState('intro')
-  const phaseRef = useRef('intro')
-  const setPhase = useCallback(p => {
-    phaseRef.current = p
-    setPhaseState(p)
-  }, [])
-  const [time, setTime] = useState('night')
-  const [session, setSession] = useState(null)
-  const [fog, setFog] = useState(false)
-  const [black, setBlack] = useState(false)
-  const [soundOn, setSoundOn] = useState(false)
+  const remembered = store.get('depot_email') || ''
+  const [email, setEmail] = useState(remembered)
+  const [password, setPassword] = useState('')
+  const [remember, setRemember] = useState(!!remembered)
+  const [settled, setSettled] = useState(remembered) // email after the user pauses typing
+  const [shipTo, setShipTo] = useState('') // last valid email: the parcel's address
+  const [submitted, setSubmitted] = useState(false)
+  const [resetting, setResetting] = useState(false)
+  const [step, setStep] = useState('idle')
+  const [errors, setErrors] = useState({})
+  const [tracking, setTracking] = useState('')
   const [toast, setToast] = useState(null)
 
-  const worldRef = useRef(null)
-  const lidTop = useRef(null)
-  const lidBot = useRef(null)
-  const hurtRef = useRef(null)
+  useEffect(() => {
+    const t = setTimeout(() => setSettled(email.trim()), 650)
+    return () => clearTimeout(t)
+  }, [email])
 
-  // Eyelids blink open while the world comes into focus.
-  const openEyes = useCallback(async slow => {
-    const duration = reduceMotion ? 0.01 : slow ? 2.8 : 1.1
-    const top = slow ? ['0%', '-36%', '-6%', '-58%', '-3%', '-115%'] : ['0%', '-115%']
-    const bot = top.map(v => (v.startsWith('-') ? v.slice(1) : v))
-    const times = slow ? [0, 0.24, 0.4, 0.62, 0.7, 1] : [0, 1]
-    await Promise.all([
-      animate(lidTop.current, { y: top }, { duration, times, ease: 'easeInOut' }),
-      animate(lidBot.current, { y: bot }, { duration, times, ease: 'easeInOut' }),
-      animate(worldRef.current, { filter: ['blur(14px) brightness(0.4)', 'blur(0px) brightness(1)'] }, { duration, ease: [0.3, 0, 0.2, 1] }),
-    ])
-    worldRef.current.style.filter = 'none'
+  useEffect(() => {
+    if (EMAIL_RE.test(settled)) setShipTo(settled)
+  }, [settled])
+
+  useEffect(() => {
+    if (!toast) return
+    const t = setTimeout(() => setToast(null), 3600)
+    return () => clearTimeout(t)
+  }, [toast])
+
+  const parcel = shipTo ? parcelFor(shipTo) : null
+
+  // How far the warehouse is allowed to go.
+  let target = shipTo ? 1 : 0
+  if (target && password.length > 0) target = 2
+  if (submitted) target = 3
+  if (resetting) target = -1
+
+  const onStep = useCallback(s => {
+    setStep(s)
+    if (s === 'idle') setResetting(false)
   }, [])
 
-  const closeEyes = useCallback(async (duration = 0.65) => {
-    const o = { duration: reduceMotion ? 0.01 : duration, ease: [0.6, 0, 0.4, 1] }
-    await Promise.all([animate(lidTop.current, { y: '0%' }, o), animate(lidBot.current, { y: '0%' }, o)])
-  }, [])
+  const updateEmail = v => {
+    setEmail(v)
+    setErrors(e => ({ ...e, email: '' }))
+  }
+  const updatePassword = v => {
+    setPassword(v)
+    setErrors(e => ({ ...e, password: '' }))
+  }
 
-  const finishIntro = useCallback(async skipped => {
-    if (phaseRef.current !== 'intro') return
-    setPhase('waking')
-    await openEyes(!skipped && !reduceMotion)
-    setPhase('login')
-  }, [openEyes, setPhase])
-
-  const login = useCallback(async ({ name, server }) => {
-    if (phaseRef.current !== 'login') return
-    setSession({ name, server, spawn: spawnFor(server) })
-    setPhase('running')
-    Sound.whoosh(3.6)
-    Sound.beat(6, 124)
-    Sound.steps(9)
-    if (!reduceMotion) {
-      await wait(2800)
-      setFog(true)
-      await wait(950)
+  const submit = () => {
+    const trimmed = email.trim()
+    const errs = {
+      email: EMAIL_RE.test(trimmed) ? '' : trimmed ? 'That doesn’t look like an email address.' : 'Enter your email so we know where to ship.',
+      password: password.length >= 6 ? '' : password ? 'Use at least 6 characters.' : 'Enter your password to call the forklift.',
     }
-    setBlack(true)
-    await wait(500)
-    setFog(false)
-    setTime('dawn')
-    Sound.weather(false)
-    setPhase('loading')
-  }, [setPhase])
+    setErrors(errs)
+    if (errs.email || errs.password) return false
+    setSettled(trimmed)
+    setShipTo(trimmed)
+    if (remember) store.set('depot_email', trimmed)
+    else store.del('depot_email')
+    setTracking(trackingNumber(trimmed))
+    setSubmitted(true)
+    return true
+  }
 
-  const loadingDone = useCallback(async () => {
-    await closeEyes(0)
-    setBlack(false)
-    setPhase('waking2')
-    await wait(500)
-    await openEyes(!reduceMotion)
-    setPhase('welcome')
-    Sound.beat(2, 60)
-  }, [closeEyes, openEyes, setPhase])
+  const signOut = () => {
+    setSubmitted(false)
+    setPassword('')
+    setResetting(true)
+    setStep('arrive')
+    if (!remember) {
+      setEmail('')
+      setSettled('')
+      setShipTo('')
+    }
+  }
 
-  const logout = useCallback(async () => {
-    if (phaseRef.current !== 'welcome') return
-    setPhase('leaving')
-    await wait(400)
-    await closeEyes()
-    setTime('night')
-    Sound.weather(true)
-    await wait(900)
-    await openEyes(false)
-    setPhase('login')
-  }, [closeEyes, openEyes, setPhase])
-
-  const hurt = useCallback(() => {
-    animate(hurtRef.current, { opacity: [0, 1, 0.3, 0.75, 0] }, { duration: 1.1, times: [0, 0.12, 0.38, 0.52, 1] })
-    Sound.beat(2, 140)
-    navigator.vibrate?.([40, 60, 40])
-  }, [])
-
-  const showToast = useCallback(msg => setToast({ msg, id: Date.now() }), [])
-  const clearToast = useCallback(() => setToast(null), [])
-  const toggleSound = useCallback(() => setSoundOn(Sound.toggle()), [])
+  const idx = at(step)
+  const level = idx >= at('drive') ? 3 : idx >= at('holding') ? 2 : idx >= at('painted') ? 1 : 0
+  const done = submitted && step === 'done'
+  const accent = parcel?.hex ?? BRAND
 
   return (
     <>
-      <div className="world" ref={worldRef} aria-hidden="true">
-        <World phase={phase} time={time} />
+      <div className="scene" aria-hidden="true">
+        <Warehouse target={target} colorHex={parcel?.hex ?? null} email={shipTo} onStep={onStep} />
       </div>
-      <div className="vignette" />
-      <div className="hurt" ref={hurtRef} />
 
-      <AnimatePresence>
-        {(phase === 'login' || phase === 'welcome') && (
-          <Hud key={'hud-' + time} time={time} cold={session?.server === 'Sakhal'} soundOn={soundOn} onToggleSound={toggleSound} />
-        )}
-      </AnimatePresence>
+      <motion.aside
+        className="card"
+        style={{ '--accent': accent, '--accent-ink': inkOn(accent) }}
+        initial={{ opacity: 0, x: -40, scale: 0.97 }}
+        animate={{ opacity: 1, x: 0, scale: 1 }}
+        transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+      >
+        <header className="brand">
+          <Logo />
+          <span className="brand-name">Depot</span>
+          <span className="pill">Warehouse login</span>
+        </header>
 
-      <main className="stage">
-        <AnimatePresence>
-          {phase === 'login' && <LoginPanel key="login" onSubmit={login} onHurt={hurt} onToast={showToast} />}
+        <AnimatePresence mode="wait">
+          {done ? (
+            <motion.div key="success" initial={{ opacity: 0, rotateY: -25 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 25 }} transition={{ duration: 0.5 }} style={{ transformPerspective: 900 }}>
+              <Success
+                email={shipTo}
+                parcel={parcel}
+                tracking={tracking}
+                onDashboard={() => setToast('This is a demo: connect “Go to dashboard” to your app.')}
+                onSignOut={signOut}
+              />
+            </motion.div>
+          ) : (
+            <motion.div key="signin" initial={{ opacity: 0, rotateY: 25 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: -25 }} transition={{ duration: 0.5 }} style={{ transformPerspective: 900 }}>
+              <SignInForm
+                email={email}
+                setEmail={updateEmail}
+                password={password}
+                setPassword={updatePassword}
+                remember={remember}
+                setRemember={setRemember}
+                parcel={parcel}
+                level={level}
+                status={statusFor(step, parcel)}
+                busy={submitted}
+                errors={errors}
+                onSubmit={submit}
+                onToast={setToast}
+              />
+            </motion.div>
+          )}
         </AnimatePresence>
-      </main>
+      </motion.aside>
 
-      <AnimatePresence>
-        {phase === 'welcome' && session && (
-          <Welcome
-            key="welcome"
-            session={session}
-            onLogout={logout}
-            onEnter={() => showToast('Demo only: nothing was sent anywhere. Hook this up to your server’s real login.')}
-          />
-        )}
-      </AnimatePresence>
-
-      <motion.div
-        className="veil fog"
-        style={{ backgroundImage: fogTexture }}
-        initial={false}
-        animate={{ opacity: fog ? 1 : 0, scale: fog ? 1 : 1.8 }}
-        transition={{ duration: fog ? 1 : 0 }}
-      />
-      <motion.div className="veil black" initial={false} animate={{ opacity: black ? 1 : 0 }} transition={{ duration: black ? 0.45 : 0 }} />
-
-      <AnimatePresence>
-        {phase === 'loading' && session && <Loading key="loading" server={session.server} onDone={loadingDone} />}
-      </AnimatePresence>
-
-      <div className="lid top" ref={lidTop} />
-      <div className="lid bot" ref={lidBot} />
-
-      <AnimatePresence>
-        {phase === 'intro' && <Intro key="intro" onDone={finishIntro} soundOn={soundOn} onToggleSound={toggleSound} />}
-      </AnimatePresence>
-
-      <Toast toast={toast} onClear={clearToast} />
-      <div className="grain" style={{ backgroundImage: grainTexture }} />
+      <div className="toast" role="status" aria-live="polite">
+        <AnimatePresence>
+          {toast && (
+            <motion.div key={toast} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }}>
+              {toast}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </>
   )
 }

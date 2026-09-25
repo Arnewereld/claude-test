@@ -1,9 +1,9 @@
 # claude-test
 this is a test with claud tot se what it can make
 
-## DayZ survivor login: Vite + React + Three.js
+## Depot: 3D warehouse login (Vite + React + Three.js)
 
-A fan-made, animated 3D login screen for DayZ. The background is a real 3D scene (React Three Fiber), and the UI is animated with Motion.
+A light-themed login page where your account ships as a parcel through a 3D warehouse.
 
 ### Run it
 
@@ -14,38 +14,37 @@ npm run dev
 
 Then open the link Vite prints (usually http://localhost:5173).
 
-Other commands:
-
 | Command | What it does |
 | --- | --- |
 | `npm run build` | Production build into `dist/` |
 | `npm run preview` | Serve the production build |
-| `npm run build:single` | Build everything into one HTML file (`dist-single/index.html`) you can double-click to open |
+| `npm run build:single` | Build everything into one HTML file (`dist-single/index.html`) you can open directly |
 
-### The flow
+### What happens
 
-1. **Intro**: typewriter text and a heartbeat line. Press any key to skip.
-2. **Wake up**: your eyelids blink open and the 3D forest comes into focus.
-3. **Login**: you're standing on a forest trail at night in the rain.
-   - Your mouse aims a real 3D **flashlight**. It lights up the trees, rain and mist.
-   - Point it at the **infected** and they notice you, groan and start walking toward you.
-   - Other details: a campfire with sparks, a blinking radio tower in the distance, lightning, and trees swaying in the wind.
-   - The login panel flies in from the fog, tilts in 3D with your mouse, and its letters flip in.
-4. **Wrong input**: the panel shakes and the screen flashes red.
-5. **Log in**: the camera **sprints down the trail** (head bob, rain streaks, FOV kick), runs straight through the login panel into the fog, then the loading screen appears.
-6. **Welcome**: you wake up at **sunrise at the edge of the forest, facing the sea**, with your survivor stats. **Log out** closes your eyes and takes you back to the night.
+1. **Type your email**: a cardboard parcel with your shipping label drops out of the hopper onto the **conveyor belt**. It rolls through the **paint booth** and gets sprayed in *your* color. Each email always gets the same color, and the whole login card switches to it.
+2. **Type your password**: the **forklift** drives over, slides its forks under the parcel and lifts it off the belt.
+3. **Press Sign in**: the forklift turns around, drives to the **truck** and loads the parcel. The roll-up door closes and the truck drives off.
+4. **You're signed in**: a success card with a tracking number and your parcel color. **Sign out** brings in a new truck.
 
-Sound is off by default. The **Sound** button turns on synthesized rain, wind, thunder, footsteps, heartbeat, the sea, and infected groans.
+The camera follows the parcel the whole way. The progress steps (Packed → Picked up → Shipped) and the status line under the button tell you what's happening.
 
 ### Project layout
 
 ```
 src/
-  App.jsx            flow / state machine (intro → login → run → loading → dawn)
-  scene/             3D world: sky + lightning, forest, grass, rain, mist, sea,
-                     campfire, infected, camera rig, flashlight
-  ui/                intro, login panel, loading screen, welcome screen, HUD, toast
-  lib/               sound engine, trail path + terrain height, shared state
+  App.jsx             form state, and how far the warehouse is allowed to go
+  scene/
+    Warehouse.jsx     canvas, lights, shadows
+    Director.jsx      the animation timeline + camera
+    Conveyor.jsx      belt, hopper, paint booth
+    Forklift.jsx      forklift with driver and moving forks
+    Truck.jsx         box truck with roll-up door
+    Parcel.jsx        the parcel and its shipping label
+    Spray.jsx         paint mist particles
+    Props.jsx         floor markings, racks, cones, pallets
+  ui/                 sign-in form, progress steps, success card, icons
+  lib/parcel.js       email → parcel color, tracking numbers
 ```
 
-The form doesn't send anything anywhere. To make it real, replace the `await wait(900)` in `src/ui/LoginPanel.jsx` with a call to your backend.
+The form doesn't send anything anywhere. To make it real, call your backend in `submit()` in `src/App.jsx` and only set `submitted` once the login succeeds.
