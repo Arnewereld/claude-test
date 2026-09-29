@@ -1,0 +1,62 @@
+# Hero-teksten per locatie (5 velden, in de bestaande ACF-groep)
+# Deze zelf invullen bij elke locatie: WordPress > Fotostudio locaties > [stad] bewerken.
+
+## Amsterdam  (post 992501)
+- Titel header (H1-regel erboven):
+    Fotostudio Amsterdam
+- Titel sub hero (de grote H1):
+    Jouw fotostudio in Amsterdam om <span style="color:#11B959">zichtbaar te groeien</span>
+- Body hero (tekst onder de titel):
+    Een complete fotostudio met professionele verlichting, een limbowand, diverse achterwanden en alle apparatuur aanwezig. Samen maken we in Amsterdam beelden die jou en je bedrijf laten groeien.
+- Titel blok 1:
+    Zo pakken wij jouw <span style="color:#11B959">fotoshoot in Amsterdam</span> aan
+- Body blok 1:
+    Onze fotostudio bevindt zich op een centrale locatie in Amsterdam, uitstekend bereikbaar met auto en openbaar vervoer. Vlakbij de ring A10, op 5 minuten van het centrum. Je komt binnen, alles staat klaar en we beginnen direct.
+
+## Rotterdam  (post 992502)
+- Titel header (H1-regel erboven):
+    Fotostudio Rotterdam
+- Titel sub hero (de grote H1):
+    Fotostudio in Rotterdam voor <span style="color:#11B959">beelden die werken</span>
+- Body hero (tekst onder de titel):
+    Een complete fotostudio met professionele verlichting, een limbowand, diverse achterwanden en alle apparatuur aanwezig. Geen gedoe vooraf: je komt binnen en we gaan aan de slag.
+- Titel blok 1:
+    Zo pakken wij jouw <span style="color:#11B959">fotoshoot in Rotterdam</span> aan
+- Body blok 1:
+    In onze fotostudio in Rotterdam staat alles klaar voordat je binnenkomt. Verlichting, achtergronden en apparatuur zijn aanwezig, zodat we meteen kunnen beginnen en jij met sterke beelden naar huis gaat.
+
+## Utrecht  (post 992503)
+- Titel header (H1-regel erboven):
+    Fotostudio Utrecht
+- Titel sub hero (de grote H1):
+    Fotostudio in Utrecht, <span style="color:#11B959">centraal in het land</span>
+- Body hero (tekst onder de titel):
+    Een complete fotostudio met professionele verlichting, een limbowand, diverse achterwanden en alle apparatuur aanwezig. Samen maken we beelden die passen bij jou en je merk.
+- Titel blok 1:
+    Zo pakken wij jouw <span style="color:#11B959">fotoshoot in Utrecht</span> aan
+- Body blok 1:
+    Utrecht ligt midden in het land, dus onze fotostudio is vanuit elke richting goed te bereiken. In de studio staan verlichting, achtergronden en apparatuur klaar, zodat we direct kunnen beginnen.
+
+## Den Haag  (post 992504)
+- Titel header (H1-regel erboven):
+    Fotostudio Den Haag
+- Titel sub hero (de grote H1):
+    Fotostudio in Den Haag voor <span style="color:#11B959">een professionele uitstraling</span>
+- Body hero (tekst onder de titel):
+    Een complete fotostudio met professionele verlichting, een limbowand, diverse achterwanden en alle apparatuur aanwezig. Voor portretten en bedrijfsbeelden die vertrouwen uitstralen.
+- Titel blok 1:
+    Zo pakken wij jouw <span style="color:#11B959">fotoshoot in Den Haag</span> aan
+- Body blok 1:
+    In onze fotostudio in Den Haag staat alles klaar voor een rustige, professionele shoot. Verlichting, achtergronden en apparatuur zijn aanwezig, zodat jij je alleen op de camera hoeft te richten.
+
+## Eindhoven  (post 992505)
+- Titel header (H1-regel erboven):
+    Fotostudio Eindhoven
+- Titel sub hero (de grote H1):
+    Fotostudio in Eindhoven voor <span style="color:#11B959">mensen, teams en producten</span>
+- Body hero (tekst onder de titel):
+    Een complete fotostudio met professionele verlichting, een limbowand, diverse achterwanden en alle apparatuur aanwezig. Voor portretten, teamfoto's en productbeelden die opvallen.
+- Titel blok 1:
+    Zo pakken wij jouw <span style="color:#11B959">fotoshoot in Eindhoven</span> aan
+- Body blok 1:
+    In onze fotostudio in Eindhoven staat alles klaar voor je shoot. Verlichting, achtergronden en apparatuur zijn aanwezig, dus je kunt direct beginnen. Ook voor productfoto's is er ruimte genoeg.
