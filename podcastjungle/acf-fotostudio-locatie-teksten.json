@@ -1,0 +1,1512 @@
+[
+    {
+        "key": "group_6abb672f1bba9",
+        "title": "Fotostudio locatie – teksten",
+        "fields": [
+            {
+                "key": "field_6abb672f1a061",
+                "label": "Blok 2 · Zichtbaar blijven",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_6abb672f1a0c2",
+                "label": "Titel",
+                "name": "blok_02_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Groene woorden zet je tussen &lt;span style=\"color:#11B959\"&gt; en &lt;/span&gt;.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Zichtbaar blijven <span style=\"color:#11B959\">met sterke beelden</span>",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1a123",
+                "label": "Tekst",
+                "name": "blok_02_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Uit één shoot haal je beelden voor maanden. Denk aan je website, LinkedIn, nieuwsbrieven en advertenties. Zo blijf je zichtbaar zonder dat je steeds opnieuw hoeft te plannen.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1a184",
+                "label": "Blok 3 · Wat je fotografeert",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_6abb672f1a1e5",
+                "label": "Titel",
+                "name": "blok_03_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Groene woorden zet je tussen &lt;span style=\"color:#11B959\"&gt; en &lt;/span&gt;.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Wat je <span style=\"color:#11B959\">fotografeert</span>",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1a246",
+                "label": "Intro",
+                "name": "blok_03_intro",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Of je nu in de studio fotografeert of op je eigen plek: je kiest wat bij jouw shoot past.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1a2a7",
+                "label": "Kaart 1 · titel",
+                "name": "blok_03_kaart_1_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Fotoshoot in de studio",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1a308",
+                "label": "Kaart 1 · tekst",
+                "name": "blok_03_kaart_1_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Fotograferen in een volledig ingerichte studio met licht en achtergronden die klaarstaan.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1a369",
+                "label": "Kaart 2 · titel",
+                "name": "blok_03_kaart_2_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Fotoshoot op locatie",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1a3ca",
+                "label": "Kaart 2 · tekst",
+                "name": "blok_03_kaart_2_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Wij komen naar je toe met professionele apparatuur, waar je ook zit.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1a42b",
+                "label": "Kaart 3 · titel",
+                "name": "blok_03_kaart_3_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Portretten en teamfoto's",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1a48c",
+                "label": "Kaart 3 · tekst",
+                "name": "blok_03_kaart_3_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Eén vaste stijl voor iedereen in je team, zodat alles mooi bij elkaar past.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1a4ed",
+                "label": "Blok 4 · Aanvullende diensten",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_6abb672f1a54e",
+                "label": "Titel",
+                "name": "blok_04_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Groene woorden zet je tussen &lt;span style=\"color:#11B959\"&gt; en &lt;/span&gt;.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Aanvullende <span style=\"color:#11B959\">diensten</span>",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1a5af",
+                "label": "Intro",
+                "name": "blok_04_intro",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Wij zorgen dat alles klaarstaat, zodat jij je volledig kunt richten op de shoot.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1a610",
+                "label": "Kaart 1 · titel",
+                "name": "blok_04_kaart_1_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Visagie op locatie",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1a671",
+                "label": "Kaart 1 · tekst",
+                "name": "blok_04_kaart_1_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Op aanvraag is er een professionele visagist aanwezig. Zo sta je meteen klaar voor de camera.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1a6d2",
+                "label": "Kaart 2 · titel",
+                "name": "blok_04_kaart_2_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Glasvezel internet",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1a733",
+                "label": "Kaart 2 · tekst",
+                "name": "blok_04_kaart_2_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Snel wifi via glasvezel. Handig om je beelden direct te back-uppen of met je klant te delen.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1a794",
+                "label": "Kaart 3 · titel",
+                "name": "blok_04_kaart_3_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Gratis parkeren",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1a7f5",
+                "label": "Kaart 3 · tekst",
+                "name": "blok_04_kaart_3_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Ruime gratis parkeergelegenheid direct voor de deur. Geen parkeermeters, geen stress.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1a856",
+                "label": "Kaart 4 · titel",
+                "name": "blok_04_kaart_4_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Ruime studio's",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1a8b7",
+                "label": "Kaart 4 · tekst",
+                "name": "blok_04_kaart_4_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Meer dan 120 m² werkvloer. Genoeg ruimte voor groepsfoto's, grote sets en meerdere opstellingen.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1a918",
+                "label": "Kaart 5 · titel",
+                "name": "blok_04_kaart_5_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Koffie & thee",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1a979",
+                "label": "Kaart 5 · tekst",
+                "name": "blok_04_kaart_5_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Er staat altijd koffie en thee klaar voor jou, je team en je modellen.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1a9da",
+                "label": "Kaart 6 · titel",
+                "name": "blok_04_kaart_6_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Flexibele tijden",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1aa3b",
+                "label": "Kaart 6 · tekst",
+                "name": "blok_04_kaart_6_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Vroege ochtendshoots of late avondsessies? We denken graag met je mee in de planning.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1aa9c",
+                "label": "Blok 5 · Professionele shoot",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_6abb672f1aafd",
+                "label": "Titel",
+                "name": "blok_05_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Groene woorden zet je tussen &lt;span style=\"color:#11B959\"&gt; en &lt;/span&gt;.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Alles voor een <span style=\"color:#11B959\">professionele shoot</span>",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1ab5e",
+                "label": "Tekst",
+                "name": "blok_05_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Van professionele verlichting tot een ruime limbowand: alles is aanwezig, dus je hoeft niets te huren of mee te nemen. Je komt binnen, fotografeert en gaat naar huis met sterke beelden.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1abbf",
+                "label": "Lijst · punt 1",
+                "name": "blok_05_lijst_1",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Professionele studioverlichting (Profoto)",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1ac20",
+                "label": "Lijst · punt 2",
+                "name": "blok_05_lijst_2",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Witte, zwarte & gekleurde achterwanden",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1ac81",
+                "label": "Lijst · punt 3",
+                "name": "blok_05_lijst_3",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Limbowand 3 × 6 meter",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1ace2",
+                "label": "Lijst · punt 4",
+                "name": "blok_05_lijst_4",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Reflectieschermen en softboxen",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1ad43",
+                "label": "Lijst · punt 5",
+                "name": "blok_05_lijst_5",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Props en standaards aanwezig",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1ada4",
+                "label": "Blok 6 · Zo werkt het",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_6abb672f1ae05",
+                "label": "Titel",
+                "name": "blok_06_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Groene woorden zet je tussen &lt;span style=\"color:#11B959\"&gt; en &lt;/span&gt;.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Zo <span style=\"color:#11B959\">werkt</span> het",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1ae66",
+                "label": "Intro",
+                "name": "blok_06_intro",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "In vier stappen van afspraak naar beelden. Wij zorgen dat alles klaarstaat, jij focust op de shoot.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1aec7",
+                "label": "Stap 1 · titel",
+                "name": "blok_06_stap_1_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "1. Plan je moment",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1af28",
+                "label": "Stap 1 · tekst",
+                "name": "blok_06_stap_1_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Bel ons of vraag persoonlijk advies aan. Samen plannen we een moment dat jou uitkomt.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1af89",
+                "label": "Stap 2 · titel",
+                "name": "blok_06_stap_2_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "2. Kom binnen",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1afea",
+                "label": "Stap 2 · tekst",
+                "name": "blok_06_stap_2_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "De verlichting en achtergronden staan klaar. Je hoeft zelf niets op te bouwen.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1b04b",
+                "label": "Stap 3 · titel",
+                "name": "blok_06_stap_3_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "3. De shoot",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1b0ac",
+                "label": "Stap 3 · tekst",
+                "name": "blok_06_stap_3_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "We nemen de tijd, sturen je bij en variëren tot het beeld klopt.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1b10d",
+                "label": "Stap 4 · titel",
+                "name": "blok_06_stap_4_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "4. Je beelden",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1b16e",
+                "label": "Stap 4 · tekst",
+                "name": "blok_06_stap_4_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Na de shoot maken we een selectie en ontvang je de nabewerkte foto's digitaal.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1b1cf",
+                "label": "Blok 7 · Studio of op locatie",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_6abb672f1b230",
+                "label": "Titel",
+                "name": "blok_07_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Groene woorden zet je tussen &lt;span style=\"color:#11B959\"&gt; en &lt;/span&gt;.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Fotograferen in onze studio <span style=\"color:#11B959\">of bij jou op locatie</span>",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1b291",
+                "label": "Tekst",
+                "name": "blok_07_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Kom naar onze fotostudio, waar verlichting en achtergronden al klaarstaan. Liever op je eigen plek? Dan komen we met licht en achtergronden naar je toe, zodat je in je eigen omgeving fotografeert.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1b2f2",
+                "label": "Veelgestelde vragen",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_6abb672f1b353",
+                "label": "Vraag 1",
+                "name": "faq_vraag_1",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Ik sta niet graag op de foto. Hoe begeleiden jullie dat?",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1b3b4",
+                "label": "Antwoord 1",
+                "name": "faq_antwoord_1",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Dat horen we vaak, en daar is de shoot op ingericht. We nemen de tijd, leggen uit wat we gaan doen en sturen je rustig bij. Zo sta je er aan het eind ontspannen op.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1b415",
+                "label": "Vraag 2",
+                "name": "faq_vraag_2",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Moet ik zelf apparatuur meenemen?",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1b476",
+                "label": "Antwoord 2",
+                "name": "faq_antwoord_2",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Nee. Verlichting, achterwanden, een limbowand, softboxen en reflectieschermen zijn aanwezig. Heb je iets specifieks nodig, laat het ons dan weten.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1b4d7",
+                "label": "Vraag 3",
+                "name": "faq_vraag_3",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Hoe plan ik een shoot?",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1b538",
+                "label": "Antwoord 3",
+                "name": "faq_antwoord_3",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Bel ons of vraag persoonlijk advies aan. We bespreken wat je nodig hebt en plannen samen een moment dat jou uitkomt.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1b599",
+                "label": "Vraag 4",
+                "name": "faq_vraag_4",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Kan ik vlak bij de ingang uitladen?",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1b5fa",
+                "label": "Antwoord 4",
+                "name": "faq_antwoord_4",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Ja, parkeren kan voor de deur en je kunt vlak bij de ingang uitladen. Handig als je props of kleding meeneemt.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1b65b",
+                "label": "Vraag 5",
+                "name": "faq_vraag_5",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Kan ik ook op locatie laten fotograferen?",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1b6bc",
+                "label": "Antwoord 5",
+                "name": "faq_antwoord_5",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Ja. Liever op je eigen plek? Dan komen wij naar je toe met professionele apparatuur.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1b71d",
+                "label": "Vraag 6",
+                "name": "faq_vraag_6",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Mag ik de foto's overal gebruiken?",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1b77e",
+                "label": "Antwoord 6",
+                "name": "faq_antwoord_6",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Ja. Je krijgt de foto's in formaten voor al je kanalen, zodat je ze kunt gebruiken op je website, social media en in drukwerk.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1b7df",
+                "label": "Blok 8 · Voor wie we werken",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_6abb672f1b840",
+                "label": "Titel",
+                "name": "blok_08_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Groene woorden zet je tussen &lt;span style=\"color:#11B959\"&gt; en &lt;/span&gt;.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Voor wie <span style=\"color:#11B959\">we werken</span>",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1b8a1",
+                "label": "Tekst",
+                "name": "blok_08_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "We fotograferen voor ondernemers, zzp'ers, teams en organisaties die zich professioneel willen laten zien. Van nieuwe portretten voor je website tot productfoto's voor je webshop: je komt binnen en alles staat klaar.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1b902",
+                "label": "Contact",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_6abb672f1b963",
+                "label": "Titel",
+                "name": "contact_titel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Groene woorden zet je tussen &lt;span class=\"green\"&gt; en &lt;/span&gt;.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Stel een <span class=\"green\">vraag</span> of plan een fotoshoot",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1b9c4",
+                "label": "Tekst",
+                "name": "contact_tekst",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Benieuwd wat Podcast Jungle voor jouw bedrijf kan betekenen? Neem dan contact met ons op. De koffie staat klaar!",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_6abb672f1ba25",
+                "label": "Lijst · punt 1",
+                "name": "contact_lijst_1",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Ervaren fotografen",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1ba86",
+                "label": "Lijst · punt 2",
+                "name": "contact_lijst_2",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Makkelijk parkeren",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1bae7",
+                "label": "Lijst · punt 3",
+                "name": "contact_lijst_3",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Beeld voor website, social media en huisstijl",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6abb672f1bb48",
+                "label": "Lijst · punt 4",
+                "name": "contact_lijst_4",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Persoonlijk advies over jouw fotografie",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "fotostudio-locatie"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Teksten per locatie voor het Elementor-template 'Fotostudio locatie (single page)'. De hero en blok 1 staan in de bestaande veldgroep.",
+        "show_in_rest": 1,
+        "display_title": ""
+    }
+]
