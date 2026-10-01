@@ -1,0 +1,49 @@
+{
+  "_note": "Green-accent highlight map for location-page section titles. Keyed by XLSX title column -> {city-masked plain title: city-masked title with a green span on the payoff phrase}. {CITY} is the location placeholder and always stays OUTSIDE the green span. Style matches the Groningen reference page: <span style=\"color:#11B959\">...</span>.",
+  "field_col_to_acf": {
+    "hero_title": "titel_sub_hero",
+    "approach_title": "titel_blok_01",
+    "studio_title": "blok_05_titel",
+    "steps_title": "blok_06_titel",
+    "audience_title": "blok_08_titel",
+    "contact_title": "contact_titel"
+  },
+  "hero_title": {
+    "Een fotostudio in {CITY} die jouw merk versterkt": "Een fotostudio in {CITY} die <span style=\"color:#11B959\">jouw merk versterkt</span>",
+    "Professionele beelden maken in {CITY}": "<span style=\"color:#11B959\">Professionele beelden</span> maken in {CITY}",
+    "Fotografie in {CITY} die past bij jouw merk": "Fotografie in {CITY} die <span style=\"color:#11B959\">past bij jouw merk</span>",
+    "Professionele fotografie in {CITY} voor een sterker merk": "Professionele fotografie in {CITY} voor <span style=\"color:#11B959\">een sterker merk</span>",
+    "Sterke fotografie in {CITY} voor mensen, merken en producten": "Sterke fotografie in {CITY} voor <span style=\"color:#11B959\">mensen, merken en producten</span>",
+    "Een professionele fotostudio in {CITY} voor zichtbaar resultaat": "Een professionele fotostudio in {CITY} voor <span style=\"color:#11B959\">zichtbaar resultaat</span>",
+    "Jouw fotostudio in {CITY} voor beeld dat overtuigt": "Jouw fotostudio in {CITY} voor <span style=\"color:#11B959\">beeld dat overtuigt</span>",
+    "Een complete fotostudio in {CITY} voor professioneel beeld": "Een complete fotostudio in {CITY} voor <span style=\"color:#11B959\">professioneel beeld</span>"
+  },
+  "approach_title": {
+    "Zo ziet de shoot eruit": "Zo ziet <span style=\"color:#11B959\">de shoot</span> eruit",
+    "Een duidelijke aanpak voor jouw fotoshoot": "Een <span style=\"color:#11B959\">duidelijke aanpak</span> voor jouw fotoshoot",
+    "Zo gaat een professionele shoot in zijn werk": "Zo gaat een <span style=\"color:#11B959\">professionele shoot</span> in zijn werk",
+    "Zo verloopt de fotoshoot": "Zo verloopt <span style=\"color:#11B959\">de fotoshoot</span>",
+    "Van binnenkomst tot sterke beelden": "Van binnenkomst tot <span style=\"color:#11B959\">sterke beelden</span>"
+  },
+  "studio_title": {
+    "Alles staat klaar voor de shoot": "Alles staat klaar voor <span style=\"color:#11B959\">de shoot</span>",
+    "Alles voor een professionele shoot": "Alles voor een <span style=\"color:#11B959\">professionele shoot</span>",
+    "Een complete studio voor sterk beeld": "Een complete studio voor <span style=\"color:#11B959\">sterk beeld</span>",
+    "Professionele apparatuur binnen handbereik": "Professionele apparatuur <span style=\"color:#11B959\">binnen handbereik</span>"
+  },
+  "steps_title": {
+    "Zo werkt het": "Zo <span style=\"color:#11B959\">werkt</span> het"
+  },
+  "audience_title": {
+    "Voor mensen en merken die zichtbaar willen groeien": "Voor mensen en merken die <span style=\"color:#11B959\">zichtbaar willen groeien</span>",
+    "Fotografie die past bij jouw organisatie": "Fotografie die past bij <span style=\"color:#11B959\">jouw organisatie</span>",
+    "Voor elk merk het juiste beeld": "Voor elk merk <span style=\"color:#11B959\">het juiste beeld</span>",
+    "Professioneel beeld voor ondernemers en organisaties": "Professioneel beeld voor <span style=\"color:#11B959\">ondernemers en organisaties</span>"
+  },
+  "contact_title": {
+    "Bespreek de mogelijkheden": "Bespreek <span style=\"color:#11B959\">de mogelijkheden</span>",
+    "Klaar voor nieuwe beelden?": "Klaar voor <span style=\"color:#11B959\">nieuwe beelden</span>?",
+    "Stel een vraag of plan een fotoshoot": "Stel een <span style=\"color:#11B959\">vraag</span> of plan een fotoshoot",
+    "Plan jouw fotoshoot": "Plan jouw <span style=\"color:#11B959\">fotoshoot</span>"
+  }
+}
