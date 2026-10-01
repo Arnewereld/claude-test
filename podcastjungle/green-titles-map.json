@@ -1,5 +1,5 @@
 {
-  "_note": "Green-accent highlight map for location-page section titles. Keyed by XLSX title column -> {city-masked plain title: city-masked title with a green span on the payoff phrase}. {CITY} is the location placeholder and always stays OUTSIDE the green span. Style matches the Groningen reference page: <span style=\"color:#11B959\">...</span>.",
+  "_note": "Green-accent highlight map for location-page section titles. Keyed by XLSX title column -> {city-masked plain title: city-masked title with a green span on the payoff phrase}. {CITY} stays OUTSIDE the green span. Style matches the reference pages: <span style=\"color:#11B959\">...</span>. Contains the union of the original and the 'verbeterd' (improved) spreadsheet variants.",
   "field_col_to_acf": {
     "hero_title": "titel_sub_hero",
     "approach_title": "titel_blok_01",
@@ -9,6 +9,12 @@
     "contact_title": "contact_titel"
   },
   "hero_title": {
+    "Professionele fotografie voor ondernemers in {CITY}": "Professionele fotografie voor <span style=\"color:#11B959\">ondernemers</span> in {CITY}",
+    "Professionele beelden voor bedrijven in {CITY}": "Professionele beelden voor <span style=\"color:#11B959\">bedrijven</span> in {CITY}",
+    "Fotostudio voor sterk zakelijk beeld in {CITY}": "Fotostudio voor <span style=\"color:#11B959\">sterk zakelijk beeld</span> in {CITY}",
+    "Zakelijke fotografie voor ondernemers in {CITY}": "Zakelijke fotografie voor <span style=\"color:#11B959\">ondernemers</span> in {CITY}",
+    "Fotografie voor merken en teams in {CITY}": "Fotografie voor <span style=\"color:#11B959\">merken en teams</span> in {CITY}",
+    "Sterk beeld voor organisaties in {CITY}": "Sterk beeld voor <span style=\"color:#11B959\">organisaties</span> in {CITY}",
     "Een fotostudio in {CITY} die jouw merk versterkt": "Een fotostudio in {CITY} die <span style=\"color:#11B959\">jouw merk versterkt</span>",
     "Professionele beelden maken in {CITY}": "<span style=\"color:#11B959\">Professionele beelden</span> maken in {CITY}",
     "Fotografie in {CITY} die past bij jouw merk": "Fotografie in {CITY} die <span style=\"color:#11B959\">past bij jouw merk</span>",
@@ -19,6 +25,10 @@
     "Een complete fotostudio in {CITY} voor professioneel beeld": "Een complete fotostudio in {CITY} voor <span style=\"color:#11B959\">professioneel beeld</span>"
   },
   "approach_title": {
+    "Wat vooraf wordt afgestemd": "Wat vooraf wordt <span style=\"color:#11B959\">afgestemd</span>",
+    "Voorbereid de studio in": "Voorbereid <span style=\"color:#11B959\">de studio</span> in",
+    "Eerst bepalen waarvoor het beeld nodig is": "Eerst bepalen <span style=\"color:#11B959\">waarvoor het beeld nodig is</span>",
+    "Een shoot begint met een duidelijk doel": "Een shoot begint met <span style=\"color:#11B959\">een duidelijk doel</span>",
     "Zo ziet de shoot eruit": "Zo ziet <span style=\"color:#11B959\">de shoot</span> eruit",
     "Een duidelijke aanpak voor jouw fotoshoot": "Een <span style=\"color:#11B959\">duidelijke aanpak</span> voor jouw fotoshoot",
     "Zo gaat een professionele shoot in zijn werk": "Zo gaat een <span style=\"color:#11B959\">professionele shoot</span> in zijn werk",
@@ -26,6 +36,11 @@
     "Van binnenkomst tot sterke beelden": "Van binnenkomst tot <span style=\"color:#11B959\">sterke beelden</span>"
   },
   "studio_title": {
+    "Zelfpromotie met herkenbaar eigen beeld": "Zelfpromotie met <span style=\"color:#11B959\">herkenbaar eigen beeld</span>",
+    "Een eigen beeldbank voor je persoonlijke merk": "Een eigen beeldbank voor je <span style=\"color:#11B959\">persoonlijke merk</span>",
+    "Zichtbaar zijn zonder steeds hetzelfde beeld te gebruiken": "<span style=\"color:#11B959\">Zichtbaar zijn</span> zonder steeds hetzelfde beeld te gebruiken",
+    "Van profielfoto naar complete personal branding": "Van profielfoto naar <span style=\"color:#11B959\">complete personal branding</span>",
+    "Regelmatig zichtbaar met beeld dat van jou is": "Regelmatig zichtbaar met <span style=\"color:#11B959\">beeld dat van jou is</span>",
     "Alles staat klaar voor de shoot": "Alles staat klaar voor <span style=\"color:#11B959\">de shoot</span>",
     "Alles voor een professionele shoot": "Alles voor een <span style=\"color:#11B959\">professionele shoot</span>",
     "Een complete studio voor sterk beeld": "Een complete studio voor <span style=\"color:#11B959\">sterk beeld</span>",
@@ -35,6 +50,11 @@
     "Zo werkt het": "Zo <span style=\"color:#11B959\">werkt</span> het"
   },
   "audience_title": {
+    "Verschillende formaten binnen één fotosessie": "Verschillende formaten <span style=\"color:#11B959\">binnen één fotosessie</span>",
+    "Beeld maken met het eindgebruik in gedachten": "Beeld maken met <span style=\"color:#11B959\">het eindgebruik</span> in gedachten",
+    "Een beeldbank voor meer dan alleen de website": "Een beeldbank voor <span style=\"color:#11B959\">meer dan alleen de website</span>",
+    "Waar de beelden voor gebruikt kunnen worden": "Waar de beelden voor <span style=\"color:#11B959\">gebruikt kunnen worden</span>",
+    "Eén shoot, meerdere zakelijke toepassingen": "Eén shoot, <span style=\"color:#11B959\">meerdere zakelijke toepassingen</span>",
     "Voor mensen en merken die zichtbaar willen groeien": "Voor mensen en merken die <span style=\"color:#11B959\">zichtbaar willen groeien</span>",
     "Fotografie die past bij jouw organisatie": "Fotografie die past bij <span style=\"color:#11B959\">jouw organisatie</span>",
     "Voor elk merk het juiste beeld": "Voor elk merk <span style=\"color:#11B959\">het juiste beeld</span>",
