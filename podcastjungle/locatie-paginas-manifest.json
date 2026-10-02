@@ -1,66 +1,76 @@
 {
-  "_note": "Live fotostudio-locatie pages after the user's request to keep only 10. The other 178 generated pages were moved to WordPress Trash (recoverable, not permanently deleted). All kept pages use the 'verbeterd' spreadsheet content with brand-green section titles. The 'test' post (992436) was left untouched.",
+  "_note": "Live fotostudio-locatie pages after the user's request to keep only 10. All 10 are now published (public). The other 178 generated pages were moved to WordPress Trash (recoverable, not permanently deleted). All kept pages use the 'verbeterd' spreadsheet content with brand-green section titles. The 'test' post (992436) was left untouched.",
   "kept_count": 10,
   "kept_pages": [
     {
       "id": 999130786,
       "slug": "almere",
       "title": "Almere",
-      "status": "private"
+      "status": "publish",
+      "link": "https://podcastjungle.nl/fotostudio-locatie/almere/"
     },
     {
       "id": 992501,
       "slug": "amsterdam",
       "title": "Amsterdam",
-      "status": "private"
+      "status": "publish",
+      "link": "https://podcastjungle.nl/fotostudio-locatie/amsterdam/"
     },
     {
       "id": 999130787,
       "slug": "breda",
       "title": "Breda",
-      "status": "private"
+      "status": "publish",
+      "link": "https://podcastjungle.nl/fotostudio-locatie/breda/"
     },
     {
       "id": 992504,
       "slug": "den-haag",
       "title": "Den Haag",
-      "status": "private"
+      "status": "publish",
+      "link": "https://podcastjungle.nl/fotostudio-locatie/den-haag/"
     },
     {
       "id": 992505,
       "slug": "eindhoven",
       "title": "Eindhoven",
-      "status": "private"
+      "status": "publish",
+      "link": "https://podcastjungle.nl/fotostudio-locatie/eindhoven/"
     },
     {
       "id": 999130779,
       "slug": "groningen",
       "title": "Groningen",
-      "status": "publish"
+      "status": "publish",
+      "link": "https://podcastjungle.nl/fotostudio-locatie/groningen/"
     },
     {
       "id": 999130788,
       "slug": "nijmegen",
       "title": "Nijmegen",
-      "status": "private"
+      "status": "publish",
+      "link": "https://podcastjungle.nl/fotostudio-locatie/nijmegen/"
     },
     {
       "id": 992502,
       "slug": "rotterdam",
       "title": "Rotterdam",
-      "status": "private"
+      "status": "publish",
+      "link": "https://podcastjungle.nl/fotostudio-locatie/rotterdam/"
     },
     {
       "id": 999130785,
       "slug": "tilburg",
       "title": "Tilburg",
-      "status": "private"
+      "status": "publish",
+      "link": "https://podcastjungle.nl/fotostudio-locatie/tilburg/"
     },
     {
       "id": 992503,
       "slug": "utrecht",
       "title": "Utrecht",
-      "status": "private"
+      "status": "publish",
+      "link": "https://podcastjungle.nl/fotostudio-locatie/utrecht/"
     }
   ],
   "trashed_count": 178,
