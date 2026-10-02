@@ -1,0 +1,9 @@
+{
+  "_note": "Omgeving-blok gebouwd ZONDER nieuwe ACF-velden, door bestaande ongebruikte velden te hergebruiken.",
+  "mapping": {
+    "blok_07_titel": "omgeving titel (Fotografie in {stad} en omgeving)",
+    "blok_07_tekst": "intro + <ul> met buurten/nabije plaatsen"
+  },
+  "section": "Toegevoegd aan template 999130639 na de 'Voor wie'-sectie; gekloond van die sectie (zelfde styling), beeld+CTA verwijderd.",
+  "pages": "alle 10 locaties"
+}
