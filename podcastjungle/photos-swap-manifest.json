@@ -1,0 +1,15 @@
+{
+  "_note": "Replaced all podcast photos on the shared location-page template (999130639) with photography photos. Applies to all 10 location pages. The 8-image 'Wat we doen' slider and the IMG_4884 studio portrait ('Voor wie we werken') were already photography and kept. Green brand shapes (Group-4249, Path-342/343) kept.",
+  "template_id": 999130639,
+  "swaps": [
+    {"slot": "hero-1 (38444563)", "from": "image170-scaled.webp (podcast)", "to": "999130626 Frederique studioportret"},
+    {"slot": "hero-2 (552a4621)", "from": "image101-scaled.webp (podcast)", "to": "999110028 IMG_0892 (zakelijk, laptop)"},
+    {"slot": "hero-3 (4ce819aa)", "from": "image149-scaled.webp (podcast)", "to": "999130341 DSC08923 (lifestyle portret)"},
+    {"slot": "zo-pakken-wij (710c2ac3)", "from": "image170-scaled.webp (podcast)", "to": "999130623 Frederique zakelijk portret"},
+    {"slot": "alles-voor-shoot (53eb8b0b)", "from": "image170-scaled.webp (podcast)", "to": "999110176 IMG_0991 productfotografie"},
+    {"slot": "expert-1 (adbce29)", "from": "IMG_0346 (podcast)", "to": "999130279 IMG_2515 event"},
+    {"slot": "expert-2 (e661d17)", "from": "IMG_0286 (podcast)", "to": "999110173 IMG_0869 portret"},
+    {"slot": "expert-3 (3d19a70)", "from": "IMG_0105 (podcast)", "to": "999130339 DSC05151 (barista/reportage)"},
+    {"slot": "expert-4 (04a11e8)", "from": "Screenshot-2023-08-31 (podcast)", "to": "999130284 IMG_2420 event"}
+  ]
+}
